@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my blog</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+
+
+        .logo img{
+            height:50px;
+        }
+      
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">
+            <img src="./image/logo.jpg" alt="logo">
+        </div>Ser1ka'blog
+    
+        <div class="nav">
+             <a href="./main.html">首页</a>
+            <a href="./intro.html">介绍</a>
+            <a href="./data.html">日志</a>
+            <a href="./regarding.html">留言</a>
+        </div>
+    </div>
+    <div class="article-main">
+    <div class="blog-wrap">
+    <!-- 左侧侧边栏 区块1 -->
+    <aside class="blog-sidebar">
+        
+        
+        
+        <article class="article-box">
+            <h2>魔法运动员</h2>
+            <div class="article-meta">
+                <span>2026-06-20</span>
+                <span>桌游</span>
+                <span>阅读时长：20分钟</span>
+            </div>
+            <p>基欢乐聚会向骰子赛跑桌游，俗称「魔法飞行棋」，主打无厘头技能互坑、随机爆笑赛场，是轻量毛线聚会神作。
+原版设计师：石田贵志（2003 年初代）
+重制优化：万智牌之父 理查・加菲尔德翻新技能与规则，BGG 评分从 6.5 提升至 7.9，人气大幅回暖
+游玩人数：2–6 人
+单局时长：30–60 分钟
+推荐年龄：6+/8+（官方标准版 8 岁 +）
+核心玩法：掷骰移动 + 角色专属魔法技能连锁干扰、四轮积分决胜</p>
+<img src="./image/zy1.jpg" alt="">
+</article>
+
+<a href="https://post.smzdm.com/p/al468m6g/" class="article-box">
+        <h2>魔法运动员</h2>
+        <div class="article-meta">
+            <span>2026-06-20</span>
+            <span>桌游</span>
+            <span>阅读时长：20分钟</span>
+        </div>
+        <p>基欢乐聚会向骰子赛跑桌游，俗称「魔法飞行棋」……</p>
+        <img src="./image/zy1.jpg" alt="">
+    </a>
+
+
+
+</div>
+<button class="backTop show" id="backTop">↑</button>
+
+<script>
+    // 获取元素
+const backTopBtn = document.getElementById('backTop');
+
+// 滚动监听：滚动超过300px显示按钮，小于则隐藏
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+        backTopBtn.classList.add('show');
+    } else {
+        backTopBtn.classList.remove('show');
+    }
+});
+
+// 点击平滑回到页面顶部
+backTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // 平滑滚动，取消则瞬间跳转
+    });
+});
+</script>
+</body>
+</html>
